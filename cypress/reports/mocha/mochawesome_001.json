@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-01-31T08:49:50.165Z",
+    "end": "2023-01-31T08:50:18.379Z",
+    "duration": 28214,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "adef406f-fbdd-4c52-8819-e55d65676cc9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\feature\\kplus\\registration\\RegistrationWithMarketingNews.feature",
+      "file": "cypress\\e2e\\feature\\kplus\\registration\\RegistrationWithMarketingNews.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ec1c1118-67a5-4582-99e4-4844e2a6a022",
+          "title": "Register new kplus account",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Register new kplus account with marketing news",
+              "fullTitle": "Register new kplus account Register new kplus account with marketing news",
+              "timedOut": null,
+              "duration": 25233,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `a[href='/order/selection/products']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 20000ms: Expected to find element: `a[href='/order/selection/products']`, but never found it.\n    at HomePage.clickElement (cypress/support/pages_object/base_page.spec.js:16:13)\n    at HomePage.accessPackagePage (cypress/support/pages_object/skyde/home_page.spec.js:8:13)\n    at PackagesPage.selectPackages (cypress/support/pages_object/skyde/packages_page.spec.js:14:17)\n    at Context.eval (cypress/support/step_definitions/kplus/packages_page_steps.spec.js:7:17)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:26:0)",
+                "diff": null
+              },
+              "uuid": "e95019ca-a912-4512-a2fc-379835e813a9",
+              "parentUUID": "ec1c1118-67a5-4582-99e4-4844e2a6a022",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "e95019ca-a912-4512-a2fc-379835e813a9"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 25233,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

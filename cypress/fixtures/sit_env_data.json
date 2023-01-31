@@ -1,0 +1,6 @@
+{
+  "salesforceUrl": "https://login.salesforce.com/",
+  "admin_username": "admin",
+  "admin_password": "admin",
+  "kplusUrl":"https://www.kplus.vn/"
+}
