@@ -112,22 +112,39 @@ npm install mochawesome-report-generator --save-dev
         }
     }
 ##### Step 3: Add scripts in package.json file
+
 **For Windows:**
+
 "scripts": {
+
     "clean:reports": "del /f cypress\\reports\\mocha\\*.json",
+	
     "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/report.json",
+	
     "generate-report": "marge cypress/reports/report.json -f report -o cypress/reports",
+	
     "posttest": "npm run combine-reports && npm run generate-repor,
+	
     "test":"npm run clean:reports && cypress run && npm run posttest",
+	
   }
+  
 **For Mac:**
+
 "scripts": {
+
     "clean:reports": "rm -R -f cypress/reports && mkdir cypress/reports && mkdir cypress/reports/mochareports",
+	
     "pretest": "npm run clean:reports",
+	
     "scripts": "cypress run",
+	
     "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
+	
     "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
+	
     "posttest": "npm run combine-reports && npm run generate-report",
+	
     "test" : "npm run scripts || npm run posttest"
   }
 
@@ -142,9 +159,15 @@ npm install mochawesome-report-generator --save-dev
 ### REFERENCE
 *********************
 https://www.toolsqa.com/cypress/what-is-cypress/
+
 https://www.cypress.io/
+
 https://docs.cypress.io/guides/overview/why-cypress
+
 https://docs.cypress.io/guides/guides/command-line#cypress-run
+
 https://github.com/TheBrainFamily/cypress-cucumber-preprocessor
+
 https://www.npmjs.com/package/cypress-cucumber-preprocessor
+
 https://dev.to/bushraalam/using-mochawesome-reporter-with-cypress-54pf
