@@ -142,9 +142,15 @@ npm install mochawesome-report-generator --save-dev
 ### REFERENCE
 *********************
 https://www.toolsqa.com/cypress/what-is-cypress/
+
 https://www.cypress.io/
+
 https://docs.cypress.io/guides/overview/why-cypress
+
 https://docs.cypress.io/guides/guides/command-line#cypress-run
+
 https://github.com/TheBrainFamily/cypress-cucumber-preprocessor
+
 https://www.npmjs.com/package/cypress-cucumber-preprocessor
+
 https://dev.to/bushraalam/using-mochawesome-reporter-with-cypress-54pf
