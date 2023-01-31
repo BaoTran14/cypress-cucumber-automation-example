@@ -112,22 +112,39 @@ npm install mochawesome-report-generator --save-dev
         }
     }
 ##### Step 3: Add scripts in package.json file
+
 **For Windows:**
+
 "scripts": {
+
     "clean:reports": "del /f cypress\\reports\\mocha\\*.json",
+	
     "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/report.json",
+	
     "generate-report": "marge cypress/reports/report.json -f report -o cypress/reports",
+	
     "posttest": "npm run combine-reports && npm run generate-repor,
+	
     "test":"npm run clean:reports && cypress run && npm run posttest",
+	
   }
+  
 **For Mac:**
+
 "scripts": {
+
     "clean:reports": "rm -R -f cypress/reports && mkdir cypress/reports && mkdir cypress/reports/mochareports",
+	
     "pretest": "npm run clean:reports",
+	
     "scripts": "cypress run",
+	
     "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
+	
     "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
+	
     "posttest": "npm run combine-reports && npm run generate-report",
+	
     "test" : "npm run scripts || npm run posttest"
   }
 
