@@ -151,9 +151,9 @@ npm install mochawesome-report-generator --save-dev
 *********************
 ## PROJECT STRUCTURE WITH CYPRESS + CUCUMBER
 *********************
-![nonGlobalStepDefinitions = false][./cypress/cypress_cucumber_structure_non_global_step_definition_false.png]
+![nonGlobalStepDefinitions = false](./cypress/cypress_cucumber_structure_non_global_step_definition_false.png)
 
-![nonGlobalStepDefinitions = true][./cypress/cypress_cucumber_structure_non_global_step_definition_true.png]
+![nonGlobalStepDefinitions = true](./cypress/cypress_cucumber_structure_non_global_step_definition_true.png)
 
 *********************
 ### REFERENCE
