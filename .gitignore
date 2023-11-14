@@ -1,3 +1,8 @@
 /cypress/reports
 /cypress/screenshots
 /cypress/videos
+node_modules
+cypress/reports/mocha/mochawesome_001.json
+cypress/reports/mocha/mochawesome_002.json
+cypress/reports/mocha/mochawesome_003.json
+cypress/reports/mocha/mochawesome.json

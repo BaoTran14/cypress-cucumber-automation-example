@@ -1,5 +1,5 @@
 import {Given, And, When, Then} from "cypress-cucumber-preprocessor/steps";
-import ThankYouPage from "../../pages_object/skyde/thank_you_page.spec";
+import ThankYouPage from "../../pages_object/kplus/thank_you_page.spec";
 const thankYouPage = new ThankYouPage();
 const context = "kplus  thank you page";
 
