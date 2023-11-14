@@ -9,7 +9,7 @@
     "generate-report": "marge cypress/reports/report.json -f report -o cypress/reports",
     "posttest": "npm run combine-reports && npm run generate-report",
     "test": "npm run clean:reports && cypress run --headed --browser chrome --env testEnv=sit && npm run posttest",
-    "testSIT": "npm run clean:reports && cypress run --record --key 68a83d9a-62b2-4c87-bfd1-568053fbba52 --headless --browser chrome --env testEnv=sit  && npm run posttest",
+    "testSIT": "npm run && cypress run --record --key 68a83d9a-62b2-4c87-bfd1-568053fbba52 --headless --browser chrome --env testEnv=sit  && npm run posttest",
     "testUAT": "npm run clean:reports && cypress run --record --key 68a83d9a-62b2-4c87-bfd1-568053fbba52 --headless --browser chrome --env testEnv=uat && npm run posttest",
     "testWithTags": "cypress-tags run -e TAGS='@Register'"
   },
