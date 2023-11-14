@@ -1,5 +1,5 @@
 import { Given, And, When, Then } from "cypress-cucumber-preprocessor/steps";
-import RegistrationPage from "../../../support/pages_object/skyde/registration_page.spec";
+import RegistrationPage from "../../../support/pages_object/kplus/registration_page.spec";
 // const registrationPage = new RegistrationPage();
 // import Generate from "../../../support/modal/generate.spec";
 const context = "kplus registration page";

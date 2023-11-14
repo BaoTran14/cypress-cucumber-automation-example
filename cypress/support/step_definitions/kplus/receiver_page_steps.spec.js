@@ -1,5 +1,5 @@
 import { Given, And, When, Then } from "cypress-cucumber-preprocessor/steps";
-import ReceiverPage from "../../../support/pages_object/skyde/receiver_page.spec";
+import ReceiverPage from "../../../support/pages_object/kplus/receiver_page.spec";
 const receiverPage = new ReceiverPage();
 const context = "kplus hardware page";
 

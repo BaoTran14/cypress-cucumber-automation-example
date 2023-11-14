@@ -1,5 +1,5 @@
 import BasePage from "..//base_page.spec";
-import HomePage from "../skyde/home_page.spec";
+import HomePage from "../kplus/home_page.spec";
 const homePage = new HomePage();
 
 // declare css locator

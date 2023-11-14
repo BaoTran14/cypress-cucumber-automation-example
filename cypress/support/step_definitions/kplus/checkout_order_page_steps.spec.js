@@ -1,5 +1,5 @@
 import {Given, And, When, Then} from "cypress-cucumber-preprocessor/steps";
-import CheckoutOrderPage from "../../../support/pages_object/skyde/checkout_order_page.spec";
+import CheckoutOrderPage from "../../../support/pages_object/kplus/checkout_order_page.spec";
 const checkoutOrderPage = new CheckoutOrderPage();
 const context = "kplus checkout order page";
 

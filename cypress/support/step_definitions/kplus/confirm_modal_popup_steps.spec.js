@@ -1,5 +1,5 @@
 import {Given, And, Whem, Then} from "cypress-cucumber-preprocessor/steps";
-import ConfirmModalPopup from "../../../support/pages_object/skyde/confirm_modal_popup.spec";
+import ConfirmModalPopup from "../../../support/pages_object/kplus/confirm_modal_popup.spec";
 const confirmModalPopup = new ConfirmModalPopup();
 const context = "confim modal popup";
 
